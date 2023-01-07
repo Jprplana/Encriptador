@@ -1,0 +1,538 @@
+* {
+  font-family: "Actay",Roboto,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+header {
+  width: 100%;
+}
+
+body {
+  display: flex;
+  background-color: #dadeee;
+  background-image: url(/images/1155052.jpg);
+  background-size:120em;
+}
+
+.container {
+  width: 100%;
+  max-width:none;
+  margin: 0 auto;
+}
+
+#logo_alura {
+  width: 10%;
+  float: left;
+  order: 0;
+  text-align: right;
+  padding: 20px;
+}
+
+.title {
+  font-family: "Actay";
+  font-size: larger;
+  font-weight:300;
+  float:left;
+  width: 60%;
+  text-align:center;
+  color: #dadeee;
+  text-shadow: 1px 1px 2px #f79d0c, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+main {
+  width:70%;
+  box-sizing: border-box;
+  float: left;
+}
+
+aside {
+  width: 30%;
+  box-sizing: border-box;
+  float: left;
+}
+
+.input-texto {
+  width: 86%;
+  height: 400px;
+  font-family: "Actay";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  color: #0a3871;
+  background: transparent;
+  border: none;
+  resize: none;
+  box-sizing: border-box;
+  padding-left: 25%;
+  padding-top: 15px;
+}
+
+.input-texto:focus {
+  border: none;
+  outline: none;
+}
+
+::placeholder {
+  color: #0a3871;
+  opacity: 64%;
+}
+
+.rectangulo {
+  width: 80%;
+  height: 600px;
+  background: rgb(255, 255, 255,0.7);
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+  position: relative;
+}
+
+.rectangulo.destello {
+  box-shadow: 0 0 240px rgb(28, 219, 7);
+  transition-property: all;
+  transition-duration: 100ms;
+}
+
+.mensaje {
+  height: 80%;
+  width: 88%;
+  margin-top: 20px;
+  margin-left: 20px;
+  background-position: 18px;
+  background-size: 300px;
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #495057;
+  font-family: "Actay";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: left;
+  line-height: 150%;
+  position: relative;
+  z-index: auto;
+}
+
+.mensaje_previo {
+  width: 100%;
+  height: 75%;
+  position: relative;
+  z-index:0;
+  margin-top: -150%;
+}
+
+#genio {
+  width: 60%;
+  height: auto;
+  padding-left: 20%;
+  margin-top: 32%;
+}
+
+h5 {
+  width: 80%;
+  height: auto;
+  font-family: "Actay";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  text-align: center;
+  color: #343a40;
+  padding-left: 10%;
+}
+
+h6 {
+  width: 80%;
+  height: auto;
+  font-family: "Actay";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  color: #495057;
+  padding-left: 10%;
+}
+
+.btnCopiar {
+  box-sizing: border-box;
+  width: 80%;
+  height: auto;
+  background:  #f8daab;
+  text-shadow: 1px 1px 2px #fdfdfc;
+  border: 1px solid #0a3871;
+  border-radius: 18px;
+  margin-left: 10%;
+  position: relative;
+  z-index: auto;
+}
+
+.btnCopiar:hover {
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+#txt-copiar {
+  width: auto;
+  height: auto;
+  font-family: "Actay";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #0a3871;
+}
+
+.botones {
+  width: 75%;
+  height: auto;
+  float: right;
+  justify-content: center;
+}
+
+.encriptar {
+  width: 40%;
+  height: auto;
+  background: #f79d0c;
+  border: 1px solid #0a3871;
+  text-shadow: 1px 1px 2px #0a3871;
+  border-radius: 24px;
+  padding: 10px;
+}
+
+.encriptar:hover {
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.desencriptar {
+  width: 40%;
+  height: auto;
+  background: #f5c16c;
+  text-shadow: 1px 1px 2px #fdfdfc;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  padding: 10px;
+}
+
+.desencriptar:hover {
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+#txt-encriptar {
+  width: auto;
+  height: auto;
+  font-family: "Actay";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+
+#txt-desencriptar {
+  width: auto;
+  height: auto;
+  font-family: "Actay";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #0a3871;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+
+.container-borrar {
+  box-sizing: border-box;
+  width: 80%;
+  height: 40px;
+  float: right;
+  margin-bottom: 20px;
+  margin-right: 14%;
+}
+
+.borrar {
+  box-sizing: border-box;
+  width: 15%;
+  height: auto;
+  border: 2px solid #f79d0c;
+  border-radius: 18px;
+  opacity: 70%;
+  float: right;
+}
+
+#txt-borrar {
+  width: auto;
+  height: auto;
+  font-family: "Actay";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #0a3871;
+}
+
+.borrar:hover {
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.leyenda {
+  width: 80%;
+  display: flex;
+  margin-left: 26%;
+
+}
+
+#txt-leyenda {
+  width: 70%;
+  height: auto;
+  padding: 4px;
+  font-family: "Actay";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  text-shadow: 1px 1px 2px #fdfdfc;
+  color: #495057;
+  opacity: 0.8;
+  box-sizing: border-box;
+}
+
+.container-vector {
+  height: 16px;
+  width: 16px;
+}
+
+footer { 
+    width: 100%;
+    height:auto;
+    float: left;
+    margin-top: 30px;
+}
+
+#footer-text {
+  color: #f2f4f7;
+  margin-bottom: 0px;
+  font-family: "Actay";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  opacity: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+/* ////////////////////////////////////////////////////// */
+/* MEDIA QUERIES */
+/* ////////////////////////////////////////////////////// */
+
+
+/* 800PX */
+@media (max-width: 800px) {
+  .rectangulo {
+    width: 100%;
+  }
+
+  .title {
+    width: 80%;
+  }
+
+  .borrar {
+    width: 32%;
+  }
+  
+  .mensaje_previo {
+    margin-top: -194%;
+  }
+}
+
+
+/* 600PX */
+@media (max-width: 600px) {
+  main {
+    width: 50%
+  }
+  
+  aside {
+  width: 50%
+}
+
+  .botones {
+    width: 100%;
+    align-items: center;
+  }
+
+  .encriptar {
+    width: 80%;
+    margin-left: 9%;
+  }
+
+  .desencriptar {
+    width: 80%;
+    margin-left: 9%;
+  }
+
+  .input-texto {
+    height: 300px;
+    font-size: 18px;
+    padding-left: 10%;
+    padding-top: 8%;
+  }
+
+  .mensaje_previo {
+    width: 90%;
+    margin-top: -220%;
+  }
+
+  h5 {
+    font-size: 19px;
+    line-height: 150%;
+    margin: 5%;
+  }
+
+  h6 {
+    width: 83%;
+    line-height: 150%;
+    margin: 5%;
+  }
+  .leyenda {
+    width: 100%;
+    margin-left: 10%;
+  }
+
+  footer { 
+    width: 100%;
+    height:auto;
+    float: left;
+    margin-top: 20px;
+  }
+
+  #footer-text {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  #txt-borrar {
+    font-size: 12px;
+  }
+}
+
+/* 400PX */
+@media (max-width: 400px) {
+  .title {
+    width: 70%;
+    font-size: 24px;
+    margin-top: 4%;
+  }
+
+  #logo_alura {
+    padding: 10px;
+    width: 20%;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  aside {
+    width: 100%;
+    height: 50%;
+  }
+
+  #txt-leyenda {
+    width: 100%;
+  }
+
+  .input-texto {
+    height: 150px;
+    width: 92%;
+    font-size: 18px;
+    padding-left: 10%;
+    padding-top: 0%;
+  }
+
+  .botones {
+    width: 100%;
+    display: flex;
+    float: left;
+    justify-content: center;
+  }
+
+  .encriptar {
+    width: 40%;
+    float: left;
+    margin: 0;
+  }
+
+  .desencriptar {
+    width: 40%;
+    float: left;
+    margin: 0;
+  }
+
+  .rectangulo {
+    width: 90%;
+    height: 96%;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+
+  #footer-text {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .genio {
+    opacity: 50%;
+    margin-top: 0%;
+  }
+
+  .mensaje_previo {
+    width: 70%;
+    margin-top: -88%;
+    margin-left: 10%;
+  }
+
+  .mensaje {
+    height: 70%;
+  }
+
+  h5 {
+    font-size: 19px;
+    line-height: 100%;
+    margin: 5%;
+  }
+
+  h6 {
+    width: 83%;
+    line-height: 105%;
+    margin: 5%;
+  }
+
+  footer { 
+    width: 100%;
+    height:auto;
+    float: left;
+    margin-top: 20px;
+  }
+
+  .btnCopiar { 
+    width: 30%;
+    height: 45px;
+    margin-left: 35%;
+  }
+
+  .rectangulo.destello {
+    box-shadow: 0 0 25px rgb(28, 219, 7);
+  }
+
+  .container-borrar {
+    margin-bottom: 1%;
+  }
+}

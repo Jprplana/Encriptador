@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Encriptador</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <header>
+        <img
+          src="/images/Exports_Figma/Logo.png"
+          id="logo_alura"
+          alt="Logo de Alura"
+        />
+        <h1 class="title">Encriptador de texto</h1>
+      </header>
+  
+      <main>        
+          <textarea
+            class="input-texto"
+            id="input-texto"
+            oninput="mostrarImagen()"
+            placeholder="Ingrese el texto aquí"
+          ></textarea>
+          <div class="container-borrar">
+          <button class="borrar" onclick="borrarTexto();mostrarImagen();ocultarCopiar();">
+            <p id="txt-borrar">Borrar</p>
+          </button>
+          </div>
+          <div class="leyenda">
+            <div class="container-vector">
+            <img
+              src="/images/Exports_Figma/Vector.png"
+              id="vector"
+              alt="Advertencia"
+            />
+            </div>
+            <p id="txt-leyenda">
+              Sólo letras minúsculas, sin acentos ni caracteres especiales
+            </p>
+          </div>
+          <div class="botones">
+            <button
+              class="encriptar"
+              onclick="btnEncriptar();mostrarCopiar();mostrarBorrar();"
+            >
+              <p id="txt-encriptar">Encriptar</p>
+            </button>
+            <button class="desencriptar" onclick="btnDesencriptar();mostrarCopiar();">
+              <p id="txt-desencriptar">Desencriptar</p>
+            </button>
+          </div>
+          
+      </main>
+
+      <aside>
+        <div class="rectangulo">
+          <textarea class="mensaje" id="txt-encriptado"></textarea>
+          <div class="mensaje_previo" id="msj-previo">
+            <img
+              src="/images/Exports_Figma/Muñeco.png"
+              id="genio"
+              alt="genio"
+            />
+            <h5>Ningún mensaje fue encontrado</h5>
+            <h6>Ingresa el texto que desees encriptar o desencriptar.</h6>
+          </div>
+          <button class="btnCopiar" onclick="copiar()">
+            <p id="txt-copiar">Copiar</p>
+          </button>
+        </div>
+      </aside>
+      
+      <footer>
+        <nav>
+          <p id="footer-text">Copyright © 2023 Juan Pablo Rodríguez Plana. Todos los derechos reservados.</p>
+        </nav>
+      </footer>
+        
+    </div>
+
+  </body>
+
+  <script src="/scripts.js"></script>
+</html>
