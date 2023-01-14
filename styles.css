@@ -317,14 +317,13 @@ footer {
 }
 
 #footer-text {
-  background: #343a40;
   color: #f2f4f7;
   margin-bottom: 0px;
   font-family: "Actay";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  opacity: 30%;
+  opacity: 80%;
   display: flex;
   justify-content: center;
 }
